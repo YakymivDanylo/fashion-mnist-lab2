@@ -1,0 +1,4 @@
+rank,val_accuracy,test_accuracy,test_loss,units_input,activation_input,units_hidden,activation_hidden,optimizer
+1,0.8908,0.8799,0.3389,352,elu,192,tanh,rmsprop
+2,0.8878,0.876,0.3439,800,relu,224,selu,adam
+3,0.8849,0.8777,0.3504,736,relu,736,selu,rmsprop

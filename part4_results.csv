@@ -1,0 +1,10 @@
+tuner,rank,val_accuracy,test_accuracy,test_loss,units_input,activation_input,activation_hidden,num_hidden_layers,units_hidden_0,optimizer,units_hidden_1,units_hidden_2,units_hidden_3,search_time_s,tuner/epochs,tuner/initial_epoch,tuner/bracket,tuner/round,tuner/trial_id
+RandomSearch,1,0.8918,0.8835,0.3324,640,tanh,tanh,3,832,adam,128,128,,162,,,,,
+RandomSearch,2,0.8903,0.8845,0.3442,256,elu,relu,4,672,adam,960,960,640.0,162,,,,,
+RandomSearch,3,0.8877,0.8791,0.3391,864,selu,tanh,3,512,adam,160,384,256.0,162,,,,,
+Hyperband,1,0.892,0.8825,0.3292,992,relu,relu,1,1024,rmsprop,224,192,384.0,310,15.0,0.0,0.0,0.0,
+Hyperband,2,0.8916,0.8824,0.3401,1024,relu,tanh,1,544,rmsprop,704,896,960.0,310,15.0,0.0,0.0,0.0,
+Hyperband,3,0.8898,0.8873,0.3318,800,relu,tanh,1,896,adam,576,832,768.0,310,15.0,5.0,2.0,2.0,0012
+BayesianOptimization,1,0.8941,0.885,0.3279,768,tanh,sigmoid,1,672,adam,736,864,960.0,178,,,,,
+BayesianOptimization,2,0.8906,0.8836,0.3335,704,tanh,sigmoid,3,704,adam,416,320,256.0,178,,,,,
+BayesianOptimization,3,0.88,0.87,0.3708,512,elu,selu,2,288,rmsprop,1024,384,960.0,178,,,,,
